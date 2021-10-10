@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\Editor\FlagEnumAttributeDrawer.cs" />
+     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -272,22 +273,22 @@
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.render-pipelines.core@10.5.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.render-pipelines.core@10.5.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -644,76 +645,76 @@
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>D:/1_2021/2021-Univ-Fall-Term/04.게임엔진실습/01.과제/HW1_점프게임제작/Fishy!/Fishy/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
            //space 입력이 감지된 경우 +y방향 힘 주기
-           PlayerRigidbody.velocity = new Vector3(0, jumpPower,0);
+           PlayerRigidbody.AddForce(Vector3.up * jumpPower,ForceMode.Impulse);
            anim.SetTrigger("isJump") ;
            anim.SetBool("isInWater",false) ;
         }
