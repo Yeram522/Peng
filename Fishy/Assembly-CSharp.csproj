@@ -36,15 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeTransforms.cs" />
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeBase.cs" />
-     <Compile Include="Assets\01.Main\Script\Player.cs" />
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\Core\FlagEnumAttribute.cs" />
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeHelper.cs" />
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\VFX\StylisedWater\WaterVolumeBox.cs" />
-     <Compile Include="Assets\01.Main\Map\Scripts\Bitgem\VFX\StylisedWater\WateverVolumeFloater.cs" />
      <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
+     <Compile Include="Assets\01.Main\Script\Player.cs" />
      <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
+     <Compile Include="Assets\01.Main\Script\Spawner.cs" />
+     <Compile Include="Assets\01.Main\Script\Step.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

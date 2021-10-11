@@ -6,11 +6,12 @@ TagManager:
   tags:
   - water
   - glacier
+  - destroctor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Manager
   - Water
   - UI
   - 

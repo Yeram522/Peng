@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4270151972806381369}
   - component: {fileID: 4943857439551042576}
   - component: {fileID: 4795726954439395488}
+  - component: {fileID: 2724519141594906273}
   - component: {fileID: 7108870216733768834}
   - component: {fileID: 1138489344588367725}
-  - component: {fileID: 3429386067446265780}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: step01
-  m_TagString: Untagged
+  m_TagString: glacier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4555552211260323320}
-  m_LocalRotation: {x: -0.5523875, y: 0.40779164, z: 0.47453755, w: 0.55080694}
-  m_LocalPosition: {x: -1.772, y: 1.261, z: 0.405}
-  m_LocalScale: {x: 1.018918, y: 1.66445, z: 1.00019}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!33 &4943857439551042576
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84,6 +84,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2724519141594906273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555552211260323320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6e7dfe07022414680ccce49bc17b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  isobstacle: 0
+  destroctor: {fileID: 0}
 --- !u!54 &7108870216733768834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98,7 +113,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!65 &1138489344588367725
 BoxCollider:
@@ -113,17 +128,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5717422, y: 0.2955498, z: 0.16898154}
   m_Center: {x: -0.0028480068, y: -0.0067129657, z: 0.12451405}
---- !u!64 &3429386067446265780
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4555552211260323320}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2879600562422342185, guid: 39370dfd4b90544548e0f29e4df7f9de, type: 3}
