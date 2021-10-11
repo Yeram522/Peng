@@ -7,16 +7,24 @@ public class Spawner : MonoBehaviour
     public GameObject stepPrefab_1;//발판
     public GameObject stepPrefab_2;//발판
     public GameObject stepPrefab_3;//발판
+    public GameObject enemy;//새
     private float interval;
     private GameObject spawned;
+    private GameObject spawnedEnemy;
+    private Vector3 spawnBirdPos;
+    private bool delaytrigger=false; 
+    public GameManager Manager;
 
-    // Start is called before the first frame update
     void Start()
     {
-        interval = Random.Range(1.5f, 4.0f);
-        StartCoroutine(sponStep());
+        Manager = transform.parent.Find("GameManager").GetComponent<GameManager>();   
+        interval = Random.Range(2.5f, 4.0f);
+        spawnBirdPos = new Vector3(transform.position.x,transform.position.y+0.2f,transform.position.z);
+        StartCoroutine(sponStep());      
+        StartCoroutine(sponEnemy());
     }
 
+    //발판을 스폰한다.
     IEnumerator sponStep()
     {
         while(true)
@@ -39,5 +47,26 @@ public class Spawner : MonoBehaviour
          spawned.transform.localScale = originScale;
          yield return new WaitForSeconds(interval);
         }
+    }
+
+    //날라오는 적을 스폰한다.
+    IEnumerator sponEnemy()
+    {         
+        while(true)
+        {
+         float randtime = Random.Range(5.0f , 10.0f);
+         if(delaytrigger == false) 
+         {
+            delaytrigger=true;
+            yield return new WaitForSeconds(4.0f);
+            continue;
+         }
+         GameObject spawnedEnemy = Instantiate(enemy , spawnBirdPos , enemy.transform.rotation);
+         Vector3 originScale = spawnedEnemy.transform.localScale;
+         spawnedEnemy.transform.SetParent(transform.parent);
+         spawnedEnemy.transform.localScale = originScale;
+         yield return new WaitForSeconds(randtime);
+        }
+        
     }
 }

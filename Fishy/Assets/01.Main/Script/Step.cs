@@ -5,14 +5,17 @@ using UnityEngine;
 public class Step : MonoBehaviour
 {
     public float speed=1;
-    public bool isobstacle;//밟아도 영구적인지 밟으면 가라 앉는 지.
     public GameObject destroctor;
+    GameObject player;
+    private GameObject Spawner;
 
     private bool iscoroutine;
     // Start is called before the first frame update
     void Start()
     {
         //목표지점 오브젝트 Find
+        Spawner = transform.Find("Constructor").gameObject;
+        player = Spawner.GetComponent<Spawner>().Manager.Player;  
         destroctor = transform.parent.Find("Destroctor").gameObject;     
     }
 
@@ -35,7 +38,8 @@ public class Step : MonoBehaviour
     {
        iscoroutine = true;
        //팽귄이 빙하에 붙어있을때. 즉 isJumping==false
-       while(!collision.gameObject.GetComponent<Player>().isJumping)
+       //if(collision.gameObject.GetComponent<Player>()==null) yield return null;
+       while(!player.GetComponent<Player>().isJumping)
        {
          collision.transform.position = Vector3.MoveTowards(collision.transform.position,destroctor.transform.position, 0.1f);
          yield return null;
@@ -47,10 +51,14 @@ public class Step : MonoBehaviour
     private void OnCollisionEnter(Collision collision)//충돌하는 순간
     {
         if(!collision.collider.CompareTag("Player")) return;
+        //if(collision.gameObject.CompareTag("glacier")) return;
+        if(collision.gameObject.GetComponent<Player>()==null) return;
         Debug.Log("빙하 팰귄 충돌");
         collision.gameObject.GetComponent<Player>().isJumping = false;
         StartCoroutine(isOnStep(collision));       
     }
+
+    
 
     private void OnCollisionExit(Collision collision)//충돌 벗어나면
     {

@@ -36,11 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
-     <Compile Include="Assets\01.Main\Script\Player.cs" />
-     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
-     <Compile Include="Assets\01.Main\Script\Spawner.cs" />
      <Compile Include="Assets\01.Main\Script\Step.cs" />
+     <Compile Include="Assets\01.Main\Script\Spawner.cs" />
+     <Compile Include="Assets\01.Main\Script\Player.cs" />
+     <Compile Include="Assets\01.Main\Map\Water\WaterReflection.cs" />
+     <Compile Include="Assets\01.Main\Script\Bird.cs" />
+     <Compile Include="Assets\01.Main\Script\GameManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/unity r00t/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
