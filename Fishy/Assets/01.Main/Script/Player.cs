@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 
     //Import Component
     private Rigidbody PlayerRigidbody;
+    private Animator animator;
     //무한 점프 방지
     public bool isJumping;
 
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     {
         hp = 3;
         PlayerRigidbody = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     public void KeyCheck()

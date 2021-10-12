@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4795726954439395488}
   - component: {fileID: 2724519141594906273}
   - component: {fileID: 7108870216733768834}
-  - component: {fileID: 1138489344588367725}
+  - component: {fileID: 817228411269821611}
   m_Layer: 1
   m_Name: step01
   m_TagString: glacier
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  destroctor: {fileID: 0}
+  Destroctor: {fileID: 0}
 --- !u!54 &7108870216733768834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
---- !u!65 &1138489344588367725
+--- !u!65 &817228411269821611
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,5 +125,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5717422, y: 0.2955498, z: 0.16898154}
-  m_Center: {x: -0.0028480068, y: -0.0067129657, z: 0.12451405}
+  m_Size: {x: 0.5585546, y: 0.28071415, z: 0.111534655}
+  m_Center: {x: 0.002482921, y: 0.00045019388, z: 0.099017546}

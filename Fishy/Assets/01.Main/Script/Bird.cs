@@ -23,10 +23,16 @@ public class Bird : MonoBehaviour
         if(other.tag == "Player")
         { 
             other.GetComponent<Player>().hp -=1;
+            Debug.Log("새충돌");
+            GameManager.instance.GameOver();//잠깐 디버깅
             return;
         }
-        //목표지점에 도착하면 소멸.
-        Debug.Log("새가 도착!");
-        Destroy(gameObject);
+        if(other.tag == "destroctor")
+        {
+          //목표지점에 도착하면 소멸.
+          Debug.Log("새가 도착!");
+          Destroy(gameObject);
+        }
+        
     }
 }

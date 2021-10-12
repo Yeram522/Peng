@@ -5,7 +5,8 @@ using UnityEngine;
 public enum GameState
 {
     inGame,
-    gameOver
+    gameOver,
+    gameClear,
 }
 
 public class GameManager : MonoBehaviour
@@ -61,15 +62,18 @@ public class GameManager : MonoBehaviour
     public void GameClear()
     {
         Debug.Log("게임클리어");
-        //Clear UI 나오기.
+        UI.transform.Find("GameClear").gameObject.SetActive(true);
+        currentState = GameState.gameClear;
     }
 
     public void GameOver()
     {
+        if(currentState == GameState.gameClear) return;
         currentState = GameState.gameOver;
         StopCoroutine("StartGame");
         //UI처리
         Debug.Log("게임오버");
+        UI.transform.Find("GameOver").gameObject.SetActive(true);
     }
 
     public void StopSpawnLevel()
@@ -81,18 +85,20 @@ public class GameManager : MonoBehaviour
     //동적으로 스포너 생성.
     IEnumerator dynamicSpawnLevel()
     {
-        int count = 1;         
+        int count = 0;         
         while(true)
         {
             Vector3 pos = new Vector3(SpawnerPrefab.transform.position.x,SpawnerPrefab.transform.position.y,SpawnerPrefab.transform.position.z+2.0f*count);//매 텀마다 z값이 점점 축적 되면서 값이 증가한다.
             int rand = Random.Range(0, 2);
             if(rand==0)
             {
-                spawned = Instantiate(SpawnerPrefab , pos , Quaternion.Euler(new Vector3(0,180.0f,0)));
+                spawned = Instantiate(SpawnerPrefab , pos , Quaternion.Euler(new Vector3(0,180.0f,0))).gameObject;
+                spawned.transform.Find("Constructor").GetComponent<Spawner>().isReverse = true;
             }
             else if(rand==1)
             {
-                spawned = Instantiate(SpawnerPrefab , pos , Quaternion.Euler(0,0,0));
+                spawned = Instantiate(SpawnerPrefab , pos , Quaternion.Euler(0,0,0)).gameObject;
+                spawned.transform.Find("Constructor").GetComponent<Spawner>().isReverse = false;
             }
             //scale 조절
             Vector3 originScale = spawned.transform.localScale;
