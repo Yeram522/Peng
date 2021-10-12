@@ -16,11 +16,14 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        hp = 3;
         PlayerRigidbody = GetComponent<Rigidbody>();
     }
 
     public void KeyCheck()
     {
+       if(GameManager.instance.gameOver) return;
+
        //player move
       if (Input.GetKey(KeyCode.UpArrow)||Input.GetKey(KeyCode.W))
       {
@@ -51,8 +54,9 @@ public class Player : MonoBehaviour
          //space 입력이 감지된 경우 +y방향 힘 주기
          if(!isJumping)
          {
-            PlayerRigidbody.AddForce(Vector3.up * jumpPower,ForceMode.Impulse); 
-             isJumping = true;             
+            //PlayerRigidbody.AddForce(Vector3.up * jumpPower,ForceMode.Impulse);
+            PlayerRigidbody.velocity = new Vector3(0, jumpPower,0); 
+            isJumping = true;             
          }           
       }
     }
