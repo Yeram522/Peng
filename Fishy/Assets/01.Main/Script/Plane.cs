@@ -9,6 +9,7 @@ public class Plane : MonoBehaviour
     {
         if(other.tag != "Player") return;
         GameManager.instance.GameOver();
+        Time.timeScale = 0;
         
     }
 }

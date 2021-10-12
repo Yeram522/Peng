@@ -11,13 +11,11 @@ public class Spawner : MonoBehaviour
     private float interval;
     private GameObject spawned;
     private GameObject spawnedEnemy;
-    //private Vector3 spawnBirdPos;
-    private bool delaytrigger=false; 
+
+    public bool isReverse;
 
     void Start()
     {
-        
-        //spawnBirdPos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
         StartCoroutine(sponStep());      
         StartCoroutine(sponEnemy());
     }
@@ -34,7 +32,7 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-         interval = Random.Range(2.3f,2.8f);
+         interval = Random.Range(1.5f,2.0f);
          int rand = Random.Range(1, 4);
          switch(rand)
          {
@@ -61,16 +59,17 @@ public class Spawner : MonoBehaviour
         while(true)
         {
          float randtime = Random.Range(20.0f , 30.0f);
-         if(delaytrigger == false) 
+         int spawndeside = Random.Range(0 , 2);
+         if(spawndeside == 1) 
          {
-            delaytrigger=true;
-            yield return new WaitForSeconds(5.0f);
-            continue;
+            if(isReverse) spawnedEnemy = Instantiate(enemy , transform.position , Quaternion.Euler(new Vector3(0,90.0f,0)));
+            else spawnedEnemy = Instantiate(enemy , transform.position , Quaternion.Euler(new Vector3(0,-90.0f,0)));
+
+            Vector3 originScale = spawnedEnemy.transform.localScale;
+            spawnedEnemy.transform.SetParent(transform.parent);
+            spawnedEnemy.transform.localScale = originScale;
          }
-         GameObject spawnedEnemy = Instantiate(enemy , transform.position , enemy.transform.rotation);
-         Vector3 originScale = spawnedEnemy.transform.localScale;
-         spawnedEnemy.transform.SetParent(transform.parent);
-         spawnedEnemy.transform.localScale = originScale;
+         
          yield return new WaitForSeconds(randtime);
         }
         

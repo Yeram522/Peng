@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  destroctor: {fileID: 0}
+  Destroctor: {fileID: 0}
 --- !u!54 &2606381560118083113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,5 +125,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5717423, y: 0.32696834, z: 0.16898148}
-  m_Center: {x: -0.0028480021, y: -0.009048249, z: 0.12451417}
+  m_Size: {x: 0.53782785, y: 0.26353022, z: 0.1246392}
+  m_Center: {x: -0.0026000142, y: 0.0066041797, z: 0.10234303}
