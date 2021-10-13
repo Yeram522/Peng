@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameState currentState = GameState.inGame;
+    public bool isWaiting;
 
     public GameObject StartPoint;
     public GameObject EndPoint;
@@ -21,9 +23,14 @@ public class GameManager : MonoBehaviour
     
     public GameObject SpawnerPrefab;//나중에 Asset에서 가져오기.
 
-   // public GameObject SpawnPosition; //Sapwner들이 동적으로 생성될 position
-
     private GameObject spawned;//Instanciate 정보를 담을 오브젝트
+
+    //Aaudio
+    private AudioSource audio;
+    public AudioClip buttonClickSound;
+
+    private AudioSource clearaudio;
+    public AudioClip clearNoticeSound;
 
     public bool gameOver;
 
@@ -32,18 +39,35 @@ public class GameManager : MonoBehaviour
     {
         instance = this;//GameManager 싱글톤
 
+        Time.timeScale = 1;
+
         //제어할 게임 오브젝트 찾기.
         StartPoint = transform.Find("StartPoint").gameObject;
         EndPoint  = transform.Find("EndPoint").gameObject;
         Player = transform.Find("Penguin").gameObject;
+        isWaiting = true;
 
-        //SpawnPosition.transform.position = SpawnerPrefab.transform.position;//레벨 스포너를 생성할 위치의 기준 점을 저장.
 
         StartCoroutine("StartGame");
     }
 
+    void Start()
+    {
+        //버튼 클릭 오디오.
+        this.audio = this.gameObject.AddComponent<AudioSource>();
+        this.audio.clip = this.buttonClickSound;
+        this.audio.loop = false;
+
+        //클리어 시 오디오
+        this.clearaudio = this.gameObject.AddComponent<AudioSource>();
+        this.clearaudio.clip = this.clearNoticeSound;
+        this.clearaudio.loop = false;
+    }
+
     void Update()
     {
+        //플레이어 체력 업데이트
+        
         if(!gameOver) return;
         //gameOver이 true이면
         StopCoroutine("StartGame");
@@ -63,7 +87,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("게임클리어");
         UI.transform.Find("GameClear").gameObject.SetActive(true);
+        this.clearaudio.Play();
         currentState = GameState.gameClear;
+        Time.timeScale = 0;
     }
 
     public void GameOver()
@@ -73,6 +99,7 @@ public class GameManager : MonoBehaviour
         StopCoroutine("StartGame");
         //UI처리
         Debug.Log("게임오버");
+        Time.timeScale = 0;
         UI.transform.Find("GameOver").gameObject.SetActive(true);
     }
 
@@ -107,10 +134,21 @@ public class GameManager : MonoBehaviour
 
             count ++;
                    
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(1.0f);
         }    
+    }
 
-        yield return null;  
+    //-----------버튼 클릭 이벤트
+    public void retrygame()
+    {
+        SceneManager.LoadScene("main");
+        this.audio.Play();
+    }
+
+    public void gotomain()
+    {
+        SceneManager.LoadScene("Tutorial");
+        this.audio.Play();
     }
   
 }

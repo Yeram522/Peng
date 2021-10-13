@@ -21,7 +21,7 @@ public class Step : MonoBehaviour
     void Update()
     {
        // 목표 지점으로 향하여 간다.
-       transform.position = Vector3.MoveTowards(transform.position, Destroctor.transform.position, 0.1f);
+       transform.position = Vector3.MoveTowards(transform.position, Destroctor.transform.position, 0.05f);
     }
 
     private void OnTriggerEnter(Collider other)//충돌하는 순간

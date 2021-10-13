@@ -22,9 +22,9 @@ public class Bird : MonoBehaviour
         
         if(other.tag == "Player")
         { 
-            other.GetComponent<Player>().hp -=1;
+            other.gameObject.GetComponent<Player>().hp -=1;
             Debug.Log("»õÃæµ¹");
-            GameManager.instance.GameOver();//Àá±ñ µð¹ö±ë
+            //GameManager.instance.GameOver();//Àá±ñ µð¹ö±ë
             return;
         }
         if(other.tag == "destroctor")

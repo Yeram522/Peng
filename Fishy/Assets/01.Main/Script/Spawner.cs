@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-         interval = Random.Range(1.5f,2.0f);
+         interval = Random.Range(2.8f,3.4f);//3.0 OK
          int rand = Random.Range(1, 4);
          switch(rand)
          {
@@ -57,20 +57,19 @@ public class Spawner : MonoBehaviour
     IEnumerator sponEnemy()
     {         
         while(true)
-        {
-         float randtime = Random.Range(20.0f , 30.0f);
-         int spawndeside = Random.Range(0 , 2);
-         if(spawndeside == 1) 
-         {
-            if(isReverse) spawnedEnemy = Instantiate(enemy , transform.position , Quaternion.Euler(new Vector3(0,90.0f,0)));
-            else spawnedEnemy = Instantiate(enemy , transform.position , Quaternion.Euler(new Vector3(0,-90.0f,0)));
-
-            Vector3 originScale = spawnedEnemy.transform.localScale;
-            spawnedEnemy.transform.SetParent(transform.parent);
-            spawnedEnemy.transform.localScale = originScale;
-         }
+        {      
+          float randtime = Random.Range(10.0f , 20.0f);
+          int spawndeside = Random.Range(0 , 2);
+          if(spawndeside == 1) 
+          {
+             if(isReverse) spawnedEnemy = Instantiate(enemy , new Vector3(transform.position.x,transform.position.y-0.8f,transform.position.z) , Quaternion.Euler(new Vector3(0,90.0f,0)));
+             else spawnedEnemy = Instantiate(enemy , new Vector3(transform.position.x,transform.position.y-0.3f,transform.position.z) , Quaternion.Euler(new Vector3(0,-90.0f,0)));
+             Vector3 originScale = spawnedEnemy.transform.localScale;
+             spawnedEnemy.transform.SetParent(transform.parent);
+             spawnedEnemy.transform.localScale = originScale;
+          }
          
-         yield return new WaitForSeconds(randtime);
+          yield return new WaitForSeconds(randtime);//randtime
         }
         
     }
