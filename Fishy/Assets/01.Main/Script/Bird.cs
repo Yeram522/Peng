@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
+    public AudioClip birdSound;
+    private AudioSource audio;
     private GameObject destroctor;
     // Start is called before the first frame update
     void Start()
     {
         destroctor = transform.parent.Find("Destroctor").gameObject;  
+
+        this.audio = this.gameObject.AddComponent<AudioSource>();
+        this.audio.clip = this.birdSound;
+        this.audio.loop = false;
     }
 
     // Update is called once per frame
@@ -23,8 +29,9 @@ public class Bird : MonoBehaviour
         if(other.tag == "Player")
         { 
             other.gameObject.GetComponent<Player>().hp -=1;
+            this.audio.Play();
             Debug.Log("»õÃæµ¹");
-            //GameManager.instance.GameOver();//Àá±ñ µð¹ö±ë
+            
             return;
         }
         if(other.tag == "destroctor")

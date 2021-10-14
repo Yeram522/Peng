@@ -736,6 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bd57e0905987044a5642d65345a50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  birdSound: {fileID: 8300000, guid: c9a54224a4495f7478946f8623c1dc8a, type: 3}
 --- !u!54 &1275885719642937578
 Rigidbody:
   m_ObjectHideFlags: 0

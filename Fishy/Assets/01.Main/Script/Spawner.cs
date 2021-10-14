@@ -32,7 +32,8 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-         interval = Random.Range(2.8f,3.4f);//3.0 OK
+         interval = Random.Range(2.8f,3.1f);//3.0 OK
+         Debug.Log(interval);
          int rand = Random.Range(1, 4);
          switch(rand)
          {

@@ -85,11 +85,11 @@ public class GameManager : MonoBehaviour
 
     public void GameClear()
     {
+        Time.timeScale = 0;
         Debug.Log("게임클리어");
         UI.transform.Find("GameClear").gameObject.SetActive(true);
         this.clearaudio.Play();
-        currentState = GameState.gameClear;
-        Time.timeScale = 0;
+        currentState = GameState.gameClear;  
     }
 
     public void GameOver()

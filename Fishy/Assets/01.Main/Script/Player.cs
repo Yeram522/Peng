@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //About Player Move
+    private BoxCollider boxcollider;
     public float speed = 5f;
     public float jumpPower = 10f;
     public int hp; //체력 3개
@@ -27,6 +28,8 @@ public class Player : MonoBehaviour
         this.audio = this.gameObject.AddComponent<AudioSource>();
         this.audio.clip = this.jumpSound;
         this.audio.loop = false;
+
+        boxcollider = GetComponent<BoxCollider>();//팽귄이 업드릴때에는 콜라이더 기능 꺼야되서 가져옴!
     }
 
     public void KeyCheck()
@@ -79,11 +82,13 @@ public class Player : MonoBehaviour
       if(Input.GetMouseButtonDown(1))
       {
          animator.SetBool("isAvoid",true);
+         boxcollider.enabled = false;
       }
 
       if(Input.GetMouseButtonUp(1))
       {
          animator.SetBool("isAvoid",false);
+         boxcollider.enabled = true;
       }
     }
 
