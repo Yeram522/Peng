@@ -11,7 +11,7 @@ public class TimeCount : MonoBehaviour
     public AudioClip countSound;
     private AudioSource audio;
 
-    void Start()
+    void Awake()
     {
         this.audio = this.gameObject.AddComponent<AudioSource>();
         this.audio.clip = this.countSound;

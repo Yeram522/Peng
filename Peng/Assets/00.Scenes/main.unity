@@ -4904,7 +4904,7 @@ GameObject:
   - component: {fileID: 1138489343732883792}
   m_Layer: 0
   m_Name: StartPoint
-  m_TagString: glacier
+  m_TagString: startpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

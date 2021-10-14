@@ -110,6 +110,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)//충돌하는 순간
     {
+      if(collision.collider.CompareTag("startpoint")) isJumping = false  ;
       if(!collision.collider.CompareTag("glacier")) return;
       isJumping = true  ;
     }
